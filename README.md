@@ -40,54 +40,55 @@ Follow these instructions to get the simulator running on your local machine.
 git clone https://github.com/Rayyan-mohammed/CRC-and-Hamming-Code-Simulator.git
 cd CRC-and-Hamming-Code-Simulator
 
-2. Create a Virtual Environment (Recommended)
+### 2. Create a Virtual Environment (Recommended)
+
 It's good practice to create a virtual environment to manage project dependencies.
 
-For Windows:
-
+For **Windows**:
+```bash
 python -m venv venv
 .\venv\Scripts\activate
 
-For macOS/Linux:
-
+For **macOS/Linux**:
+```bash
 python3 -m venv venv
 source venv/bin/activate
 
-3. Install Dependencies
-The required packages are listed in requirements.txt. Install them using pip:
+### 3. Install Dependencies
 
+The required packages are listed in requirements.txt. Install them using pip:
+```bash
 pip install -r requirements.txt
 
-4. Run the Streamlit App
-Once the dependencies are installed, run the following command in your terminal:
+### 4. Run the Streamlit App
 
+Once the dependencies are installed, run the following command in your terminal:
+```bash
 streamlit run app.py
 Your default web browser will open a new tab with the running application.
 
-🛠️ Technology Stack
+#### 🛠️ Technology Stack
+
 Language: Python
 Framework: Streamlit (for the web application UI)
 Libraries: Pandas (for structured data display)
 
-📁 File Structure
+### 📁 File Structure
 .
 ├── app.py             # The main Streamlit application script
 ├── README.md          # Project documentation
 └── requirements.txt   # List of Python dependencies
 
+### 🤝 Contributing
 
-🤝 Contributing
 Contributions are welcome! If you have suggestions for improvements or want to add new features (like simulating burst errors), please feel free to fork the repository and submit a pull request.
-
+```bash
 Fork the repository.
-
 Create your feature branch (git checkout -b feature/NewFeature).
-
 Commit your changes (git commit -m 'Add some NewFeature').
-
 Push to the branch (git push origin feature/NewFeature).
-
 Open a Pull Request.
 
-📄 License
+### 📄 License
+
 This project is licensed under the MIT License.
