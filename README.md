@@ -129,7 +129,7 @@ Potential improvements:
 ## 📜 License  
 
 This project is licensed under the **MIT License**.  
-Feel free to use, modify, and distribute it in both personal and commercial projects.  
+Feel free to use, modify, and distribute it in both personal and commercial projects.
 
 ---
 
