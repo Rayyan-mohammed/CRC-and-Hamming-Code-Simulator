@@ -1,109 +1,145 @@
 # CRC-and-Hamming-Code-Simulator
 
-An interactive web application built with Streamlit to demonstrate and
-compare two fundamental error control techniques in computer networks:
-Cyclic Redundancy Check (CRC) for error detection and Hamming Code for
-error detection and correction.
+An **interactive visualization tool** built with [Streamlit](https://streamlit.io/) that demonstrates two cornerstone error-control mechanisms in computer networks:  
 
-This tool provides a clear, step-by-step visualization of how data is
-encoded, how errors are introduced, and how these algorithms work to
-handle data corruption during transmission.
+- **Cyclic Redundancy Check (CRC)** → *Error Detection*  
+- **Hamming Code** → *Error Detection + Error Correction*  
 
-✨ Features - **Interactive UI**\
-A user-friendly interface to input custom data and see results in
-real-time.
+This simulator provides a **step-by-step, visual, and comparative** representation of how these techniques work — from encoding to error introduction to detection/correction.  
 
--   **CRC Simulation**
-    -   Generates a CRC codeword from user-defined data and a generator
-        polynomial.\
-    -   Simulates a single-bit error in the transmitted codeword.\
-    -   Verifies the received codeword to show how CRC detects the
-        error.
--   **Hamming Code Simulation**
-    -   Calculates the required number of parity bits and generates a
-        Hamming codeword.\
-    -   Simulates a single-bit error.\
-    -   Detects the exact position of the error and demonstrates the
-        self-correction process.
--   **Side-by-Side Comparison**\
-    Clearly contrasts the capabilities of CRC (detection only) with
-    Hamming Code (detection and correction).
+---
 
-🚀 How to Run Locally Follow these instructions to get the simulator
-running on your local machine.
+## ✨ Key Features  
 
-### Prerequisites
+### 🖥️ Interactive Interface  
+- Clean, intuitive UI to experiment with custom inputs.  
+- Real-time visualization of encoding, error simulation, and verification.  
 
--   Python (version 3.8 or higher)\
--   pip (Python's package installer)\
--   git (for cloning the repository)
+### 🔄 CRC Simulation  
+- Encode data using CRC with a user-defined generator polynomial.  
+- Introduce a **single-bit error** during transmission.  
+- Detect corruption by verifying the received codeword.  
 
-### 1. Clone the Repository
+### 🛠️ Hamming Code Simulation  
+- Compute the number of parity bits automatically.  
+- Generate the **Hamming codeword** for the given input.  
+- Simulate a **single-bit error**, pinpoint the error location, and demonstrate **self-correction**.  
 
-``` bash
+### ⚖️ Side-by-Side Comparison  
+- **CRC** → Detects errors only.  
+- **Hamming Code** → Detects *and* corrects errors.  
+
+---
+
+## 🚀 Getting Started  
+
+Follow these steps to set up and run the simulator locally.  
+
+### ✅ Prerequisites  
+- Python **3.8+**  
+- pip (Python package manager)  
+- git  
+
+---
+
+### 1️⃣ Clone the Repository  
+```bash
 git clone https://github.com/Rayyan-mohammed/CRC-and-Hamming-Code-Simulator.git
 cd CRC-and-Hamming-Code-Simulator
 ```
 
-### 2. Create a Virtual Environment (Recommended)
+---
 
-It's good practice to create a virtual environment to manage project
-dependencies.
+### 2️⃣ Create a Virtual Environment (Recommended)  
 
-For Windows:
-
-``` bash
+**Windows**:  
+```bash
 python -m venv venv
-.env\Scriptsctivate
+.env\Scripts\activate
 ```
 
-For macOS/Linux:
-
-``` bash
+**macOS/Linux**:  
+```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-### 3. Install Dependencies
+---
 
-The required packages are listed in requirements.txt. Install them using
-pip:
-
-``` bash
+### 3️⃣ Install Dependencies  
+```bash
 pip install -r requirements.txt
 ```
 
-### 4. Run the Streamlit App
+---
 
-Once the dependencies are installed, run the following command in your
-terminal:
-
-``` bash
+### 4️⃣ Run the Application  
+```bash
 streamlit run app.py
 ```
+This will launch the app in your **default web browser**.  
 
-Your default web browser will open a new tab with the running
-application.
+---
 
-🛠️ Technology Stack - **Language**: Python\
-- **Framework**: Streamlit (for the web application UI)\
-- **Libraries**: Pandas (for structured data display)
+## 🛠️ Tech Stack  
 
-📁 File Structure
+- **Language**: Python  
+- **Framework**: Streamlit (web app UI)  
+- **Libraries**: Pandas (structured data handling, visualization)  
 
-    .
-    ├── app.py             # The main Streamlit application script
-    ├── README.md          # Project documentation
-    └── requirements.txt   # List of Python dependencies
+---
 
-🤝 Contributing Contributions are welcome! If you have suggestions for
-improvements or want to add new features (like simulating burst errors),
-please feel free to fork the repository and submit a pull request.
+## 📂 Project Structure  
 
-1.  Fork the repository.\
-2.  Create your feature branch (`git checkout -b feature/NewFeature`).\
-3.  Commit your changes (`git commit -m 'Add some NewFeature'`).\
-4.  Push to the branch (`git push origin feature/NewFeature`).\
-5.  Open a Pull Request.
+```
+.
+├── app.py             # Main Streamlit application
+├── README.md          # Project documentation
+└── requirements.txt   # Python dependencies
+```
 
-📄 License This project is licensed under the MIT License.
+---
+
+## 🤝 Contributing  
+
+Contributions are always welcome! 🚀  
+
+1. Fork the repository.  
+2. Create your feature branch:  
+   ```bash
+   git checkout -b feature/NewFeature
+   ```  
+3. Commit your changes:  
+   ```bash
+   git commit -m "Add NewFeature"
+   ```  
+4. Push to your branch:  
+   ```bash
+   git push origin feature/NewFeature
+   ```  
+5. Open a Pull Request.  
+
+Potential improvements:  
+- Simulating **burst errors**.  
+- Adding **multi-bit error scenarios**.  
+- Enhanced **visual analytics**.  
+
+---
+
+## 📜 License  
+
+This project is licensed under the **MIT License**.  
+Feel free to use, modify, and distribute it in both personal and commercial projects.  
+
+---
+
+## 📧 Contact  
+**Rayyan Mohammed**  
+- GitHub: [@Rayyan-mohammed](https://github.com/Rayyan-mohammed)  
+- Email: rayyan1652@gmail.com  
+
+Project Link: [CRC and Hamming Code Simulator](https://github.com/Rayyan-mohammed/CRC-and-Hamming-Code-Simulator.git)  
+
+---
+
+🔥 With this simulator, you’ll not only understand the **mathematics** behind CRC and Hamming Code but also **see them in action**!  
