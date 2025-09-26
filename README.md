@@ -139,7 +139,3 @@ Feel free to use, modify, and distribute it in both personal and commercial proj
 - Email: rayyan1652@gmail.com  
 
 Project Link: [CRC and Hamming Code Simulator](https://github.com/Rayyan-mohammed/CRC-and-Hamming-Code-Simulator.git)  
-
----
-
-🔥 With this simulator, you’ll not only understand the **mathematics** behind CRC and Hamming Code but also **see them in action**!  
